@@ -1,0 +1,41 @@
+<!-- templates/name.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Hi</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>Say Hi</h1>
+            <p>
+                Leave your name here.
+            </p>
+            <form method="POST">
+                <input 
+                    type="text" 
+                    name="username"
+                    placeholder="Your name"
+                    required
+                >
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+            
+            <div class="return"> <button onclick="location.href='./'" id="go_back">Return</button> </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

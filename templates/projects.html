@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneeth krishnas projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container"> 
+        <div class="cont_card">
+        <div class="card">
+            
+            <h1> Ultrasonic sensor distance detection with arduino</h1> <br>
+
+            <img src="{{ url_for('static', filename='ultrasonic.jpg')}}" 
+            alt="Ultrasonic sensor" 
+            width="450" 
+            height="270"> <br>
+
+
+            <button type="button" onclick="window.location.href='https://youtube.com/watch?v=cXIF77eiTmQ'">
+            Video Showcase
+            </button>
+            <p>A simple distance detection system that activates three colored leds at different lengths </p>
+            <p>I made it a long time ago and later attached an LCD display to it to show the exact distance</p>
+            <u>Pro(s)</u>
+            <p>Very simple and scalable.</p>
+            <u>Con(s)</u>
+            <p>Different reading based on material.</p>
+
+            <u>Items used</u>
+            <ol>
+                <li><b>Arduino UNO x1</b></li>
+                <li><b>LCD screen module x1</b></li>
+                <li><b>HC-SR04 Ultrasonic sensor x1</b></li>
+                <li><b>Colored LEDs x3</b></li>
+                <li><b>Jumpers and other wires</b></li>
+
+            </ol>
+
+        </div>
+
+        <div class="return"> <button onclick="location.href='./'" id="go_back">Return</button> </div>
+        </div>
+    </div>
+</body>
+</html>

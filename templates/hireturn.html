@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            
+            <h1>Thanks!</h1>
+            <p> For saying hi. Your name is recorded in a file inside the server. <br>
+                 I read it from time to time. <br>
+                 feel free to leave some notes!
+            </p>
+
+            <div class="return"> <button onclick="location.href='./'" id="go_back">Return</button> </div>
+        </div>
+
+    </div>
+</body>
+</html>

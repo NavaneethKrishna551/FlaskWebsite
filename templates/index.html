@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneeth</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="cont_card">
+        <div class="card">
+
+            <section id="Intro">
+            <h1>Hi! I'm Navaneeth</h1>
+            <b style="font-size: 17.5px;">Student • Programmer • Builder</b>
+            <p id="Intro1">I'm a highschooler whos interested in python, IoT, networks and minecraft servers. <br>
+            I started learning python in 2022-23 and now i would say im almost fluent in it.<br>
+            I'm aspiring to do work in the technical field.<br>
+            </p>
+            </section>
+
+        </div>
+    
+
+    <section class="nav_menu">
+    <nav id="nav">
+    <ul>
+    <li>
+    <button onclick="location.href='{{ url_for('sayhi') }}'">
+    Say hi to me!
+    </button>
+    </li>
+
+    <li>
+    <button onclick="location.href='{{ url_for('projects') }}'">
+    Projects
+    </button>
+     </li>
+    </ul>
+    </nav>
+    </section>
+
+    
+
+    <div class="card">
+
+            <section id="Projects">
+            <h1>Projects & Technical Experience</h1>
+            <p> Alongside Python, I've also explored C++ and understand its fundamentals.</p>
+            <p> I'm also interested in IoT and electronics. I've built several small projects using Arduino <br>
+            boards and sensors.</p>
+            <p> I'm currently learning networking</p>
+            <h3> Here are some resources i use</h5>
+            
+            <a href="https://www.youtube.com/watch?v=S7MNX_UD7vY&list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P&index=1"> CCNA taught by networkchuck</a>
+            <a href="https://www.youtube.com/watch?v=mRMmlo_Uqcs&list=PLIhvC56v63ILPDA2DQBv0IKzqsWTZxCkp"> Python Course by networkchuck</a> <br>
+            
+            <a href="https://www.youtube.com/@Dronebotworkshop"> For everthing IoT</a>
+            <a href="https://www.youtube.com/@BenEater"> For everything ICs</a><br>
+
+            <a href="https://www.youtube.com/@EngineeringMindset"> For more electronics</a>
+            </section>
+
+
+        </div>
+
+
+        <div class="card">
+
+            <section id="About me">
+            <h2>More about me</h2>
+            <p>I'm from India and am currently studying in grade 9. <br> 
+            <p>I speak 3 languages English, Hindi and my mother tounge, malayalam</p>
+            <p>Outside of programming, i also like photography and football. <br>
+            Check out my Socials <br><br></p>
+            <a href="https://www.youtube.com/@NavaneethKrishna1207">Youtube</a>
+            <a href="https://www.instagram.com/navaneeth.krishna05/">Instagram</a>
+            </p>
+            </section>
+
+        </div>
+        <div class="footer">
+            copyright&copy Navaneeth Krishna 2026
+        </div>
+    </div>
+    </div>
+</body>
+</html>
