@@ -7,9 +7,9 @@ body {
     padding: 0;
 }
 
-.container {
+.container{
     width: 98%;
-    margin: 20px auto;
+    margin: 80px auto 20px auto;
 }
 
 .card {
@@ -86,7 +86,7 @@ button:hover {
     left: 0;
     text-align: center;
     position: fixed;
-    background-color: blue;
+    background-color: rgb(35, 32, 36);
     padding-right: 1cm;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -97,28 +97,56 @@ a {
     color: aliceblue;
     font-size: larger;
 }
-
 .nav_menu{
-    text-align: right;
-    right: 0;
-    top: 0%;
     position: fixed;
-    height: 100%;
-    padding-right: 1cm;
+    top: 0;
+    left: 0;
 
-    border: 3px dashed white;
+    width: 100%;
+
     background-color: black;
-    margin-bottom: 20px;
+    border-bottom: 3px solid white;
 
-    padding-top: 0px;
-    padding-left: 10px;
+    padding: 10px;
 
-    line-height: 0.9;
+    z-index: 1000;
+}
+
+#socials_btn{
+    border-left: solid white;
+    padding-left: 20px;
+    
+}
+
+.nav_menu ul{
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 20px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu li{
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu button{
+    margin: 0;
 }
 
 #go_back{
     margin-left: 0;
 }
+
+
 
 .return{
     padding: 10px;

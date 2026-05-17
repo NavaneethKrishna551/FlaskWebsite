@@ -11,6 +11,12 @@
     <div class="container">
         <div class="cont_card">
         <div class="card">
+            <h1>Projects</h1>
+            <p>Below you can find the projects ive made</p>
+            <!--TODO: ADD NAVIGATION FOR PROJECTS-->
+
+        </div>
+        <div class="card">
 
             <h1> Ultrasonic sensor distance detection with arduino</h1> <br>
 
@@ -42,7 +48,40 @@
 
         </div>
 
-        <div class="return"> <button onclick="location.href='./'" id="go_back">Return</button> </div>
+        <div class="card">
+            <section id="Temprature and humidity">
+                <h1>Temprature and humidity sensor project</h1>
+                <p>Last year, for our schools science fest i made a simple DHT11 based Temprature and humidity module. <br>
+                I used the DHT11 Temprature and humdity sensor connected to an arduino to measure the temprature. <br>
+                To display this data i use an LCD module.<br> <br>
+                In my first version i connected it to arduino by simple <br>
+                connecting all the 16 pins according to diagram online. This version was very unstable. <br>
+                Due to using old jumper wires which had broken strands inside and rusted tips, even small <br>
+                Could mess up the reading. <br> <br>
+                In my second version i used an I2C converter connected to the LCD which made it way easier to <br>
+                connect and debug the project.<br> <br>
+                With this project i earned rank 1 in the sensor project category. Thus i was promoted to the <br>
+                district level held in kattapana, in which i also earned 1st rank. So i was promoted to the <br>
+                state level science fair held in malappuram. In which i got B grade. <br> <br>
+                I later Upgraded this with air quality checking using the MQ gas sensor. 
+                </p>
+
+
+            </section>
+        </div>
+
+        <section class="nav_menu">
+        <nav id="nav">
+        <ul>
+        <li><div class="return"> <button onclick="location.href='./'" id="go_back">Home</button> </div></li>
+        <li><button onclick="location.href='{{ url_for('sayhi') }}'">Say hi to me!</button></li>
+
+        <span id="socials_btn"><li><button onclick="window.location.href='https://www.youtube.com/@NavaneethKrishna1207'">Youtube</button></li></span>
+        <li><button onclick="window.location.href='https://www.instagram.com/navaneeth.krishna05/'">Instagram</button></li>
+        </ul>
+        </nav>
+
+        
         </div>
     </div>
 </body>

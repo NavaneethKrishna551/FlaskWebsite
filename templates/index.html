@@ -6,10 +6,11 @@
     <title>Navaneeth</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index2.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
 </head>
 <body>
     <div class="container">
-        <div class="cont_card">
+    <div class="cont_card">
         <div class="card">
 
             <section id="Intro">
@@ -27,19 +28,13 @@
     <section class="nav_menu">
     <nav id="nav">
     <ul>
-    <li>
-    <button onclick="location.href='{{ url_for('sayhi') }}'">
-    Say hi to me!
-    </button>
-    </li>
-
-    <li>
-    <button onclick="location.href='{{ url_for('projects') }}'">
-    Projects
-    </button>
-     </li>
+    <li><button onclick="location.href='{{ url_for('sayhi') }}'">Say hi to me!</button></li>
+    <li><button onclick="location.href='{{ url_for('projects') }}'">Projects</button></li>
+    <span id="socials_btn"><li><button onclick="window.location.href='https://www.youtube.com/@NavaneethKrishna1207'">Youtube</button></li></span>
+    <li><button onclick="window.location.href='https://www.instagram.com/navaneeth.krishna05/'">Instagram</button></li>
     </ul>
     </nav>
+
     </section>
 
 

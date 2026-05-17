@@ -32,7 +32,15 @@
                 </button>
             </form>
 
-            <div class="return"> <button onclick="location.href='./'" id="go_back">Return</button> </div>
+            <div class="nav_menu">
+                <ul>
+                    <li><div class="return"> <button onclick="location.href='./'" id="go_back">
+                        Home
+                    </button></div></li>
+                    <li><button onclick="location.href='{{ url_for('projects') }}'">Projects</button></li>
+                    
+                </ul>
+            </div>
 
         </div>
     </div>
